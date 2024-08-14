@@ -54,6 +54,11 @@
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(17, 17, 17, 0.904) 100%);
 
 }
+.manu-list{
+    border: 1.3px solid rgba(90, 89, 89, 0.836);
+    padding: 6px;
+    border-radius: 45px;
+}
 .nav-bar{
     justify-content: space-between;
     align-items: center;    
