@@ -293,6 +293,27 @@
         padding-top: 1vw;
     
     }
+    .Calculator-bar{
+        width: 576px;
+        padding: 1rem 2rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+        justify-content: space-between;
+    
+    }
+    .bmi-tabel{
+        width: 30rem;
+    
+    }
+    .bmi-Calculator-body{
+        width: 31rem;   
+    }
+    .bmi-Calculator{
+        width: 31.2rem;
+    }
     .team-contener-bar{
         width: 576px;
          
@@ -388,7 +409,12 @@
     .footer-manu a{
         font-size: 1rem;
         font-weight: 400;
-
+    }
+    .hr{
+        margin: 2rem auto;
+    }
+    .all-right{
+        padding-bottom: 2rem;
     }
 
 
