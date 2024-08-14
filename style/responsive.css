@@ -275,18 +275,23 @@
         width: 576px;
     }
     .bmi-header-contener{
-        width: 576px;
+   
+        height: 120px;
         align-items: center;
-        
+        margin:0 10vw 0 5vw;
+        padding-top: 3vw;
+        padding-bottom: 2.5vw ;
     }
     .bmi-header{
+        width: 100%;
         color: aliceblue;
-        font-size:3vw;
+        font-size:5vw;
         font-weight: 900;
         
         
     }
     .bmi-details{
+        width: 70%;
         font-size: 12px;
         text-align: left;
         padding-top: 1vw;
