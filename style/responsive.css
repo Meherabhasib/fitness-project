@@ -347,6 +347,50 @@
         color: rgb(178, 180, 180);
         font-size: 1.9vw;
     }
+    .foot-contener{
+        width: 576px;
+        display: flex;
+        flex-direction: column;      
+    } 
+    .footer-manu{
+      width: 100%;
+
+    }
+    .foot-logo-pera{
+        padding: 1rem 1rem ;
+    }
+    .foot-logo{
+        font-size: 4rem;
+        font-weight: 900;
+    }
+    .foot-para{
+        font-size: 1rem;
+        padding-top: 1.5vw;
+        color: rgb(142, 145, 145);
+    }
+    .footer-manu h1{
+        color: aliceblue;
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: left;
+    
+    }
+    .footer-manu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 1rem;
+        
+    }
+    .footer-manu h1, a{
+        padding: 2vw 0;
+    }
+    .footer-manu a{
+        font-size: 1rem;
+        font-weight: 400;
+
+    }
+
 
     
     

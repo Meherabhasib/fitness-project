@@ -97,7 +97,7 @@
     font-family: "Estonia", cursive;
     display: inline-block;
     font-size: 100px;
-    
+    position: absolute;
    
 }
 .banner-discription{    
@@ -760,10 +760,7 @@
     padding: 2vw 0 1.5vw;
     
 }
-.footer-manu{
-    width: 50%;
 
-}
 .foot-logo{
     font-size: 3vw;
     font-weight: 900;
