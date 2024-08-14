@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
 *{
     font-family: "Inter", sans-serif;
     
@@ -91,9 +92,14 @@
 .banner-title{
     font-size:3.5rem;
     font-weight: 900;
+    
 }
 .banner-title > span{
     font-family: "Estonia", cursive;
+    display: inline-block;
+    font-size: 100px;
+    position: absolute;
+   
 }
 .banner-discription{    
     font-size: 14px;
@@ -266,6 +272,78 @@
 
 }
 /*run end*/
+/*Top-Reads start*/
+.Top-Reads{
+    background-color: black;
+    padding: 4vw 0 ;
+}
+.Top-Reads-contener{
+    width: 71.5vw;
+    margin: 0 auto;
+    padding: 1.5vw;
+    border-radius: 10px;
+    background-color: rgba(32, 32, 32, 0.89);
+}
+.Top-Reads-contener h1{
+    font-size: 3vw;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.849);
+}
+.reads-contener{
+    display: grid;
+    padding-top: 3vw;
+    gap: 10px;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(12 , 1fr);
+}
+.contener-1{
+    grid-column: 1/ span 6;
+    grid-row: 1/ span 6;
+    gap: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px 5px;
+}
+
+.contener-2{
+    grid-column: 7/ span 6;
+    grid-row: 1/ span 6;
+    gap: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px 4px;
+    
+}
+.contener-3{
+    grid-column: 1/ span 6;
+    grid-row: 7/ span 6;
+    gap: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px 5px;
+}
+.contener-4{
+    grid-column: 7/ span 6;
+    grid-row: 7/ span 6;
+    gap: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px 5px;
+}
+.contener-1-h1-p h3 {
+    font-size: 2vw;
+    padding-top: 1.5vw;
+    font-weight: 700;
+    color: aliceblue;
+    text-align: left;
+    
+}
+.contener-1-h1-p p{
+    font-size: 1vw;
+    padding-top: 1vw ;
+    font-weight: 400;
+    color: rgb(156, 156, 156);
+    text-align: left;
+
+}
+
+/*Top-Reads start*/
 /*Trainings and Exercises start*/
 .Trainings-and-Exercises{
     background-color: black ;
@@ -453,6 +531,7 @@
 }
 .bmi-Calculator-contener{
     background-color: rgb(34, 34, 34);
+    padding-bottom: 4vw;
 }
 .Calculator-bar{
     width: 74.5vw;
@@ -502,21 +581,63 @@
 
 }
 .bmi-Calculator-body{
-    width: 35vw;
-    
+    width: 35vw;   
 }
 .bmi-Calculator{
-   display: flex;
- justify-content: space-between;
-   flex-wrap: wrap;
-   
-}   
-.all-bmi-input{
+    width: 35vw;
+}
+.height-weight{
+    display:flex;
+    justify-content: space-between;
+
+}
+.height-weight input{
     width: 50%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(133, 133, 133, 0.5);
 }
-.bmi-Calculator input,select{
+.age-sex{
+    display:flex;
+    justify-content: space-between;
+}
+.age-sex .sex, input{
+    width: 50%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(133, 133, 133, 0.5);
+}
+.sex select{
     width: 100%;
+    background-color: rgba(85, 84, 84, 0.685);
+    border: none;
 }
+
+.sex select > option{
+    color: rgb(176, 179, 179);
+}
+.company-name { 
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(133, 133, 133, 0.5);
+
+}
+.company-name select{ 
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(85, 84, 84, 0.685);
+    border: none;
+}
+
+
+
 .calculate-btn{
     padding: 12px 45px;
     background-color: rgb(230, 83, 60);
@@ -534,9 +655,7 @@
 }
 .team-contener-bar{
     width: 74.4vw;
-    margin: 0 auto;
-
-    
+    margin: 0 auto; 
 }
 .team-contener-bar h2{
     padding-top: 4vw;
@@ -554,7 +673,6 @@
     color: rgb(133, 133, 133);
     align-items: center;
     text-align: center;
-
 }
 .team-member-img-section{
     width: 74.4vw;
@@ -570,48 +688,126 @@
     height:500px;  
     gap: 10px;
     grid-template-columns: repeat(12 , 1fr);
-    grid-template-rows: repeat(12 , 1fr);
-    
-   
-    
+    grid-template-rows: repeat(12 , 1fr);   
 }
 
 .team-member-img img{
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-
-    
+    border-radius: 10px;   
 }
 .team-member-img1{
     grid-column: 1/ span 4;
     grid-row: 1/ span 6;
+    position: relative;
     
 }
 .team-member-img2{ 
     grid-column: 5/ span 4;
     grid-row: 1/ span 6;
+    position: relative;
 }
    
 .team-member-img3{ 
     grid-column: 9/ span 4;
     grid-row: 1/ span 6;
+    position: relative;
    
 }
 .team-member-img4{
      grid-column: 1/ span 4;
     grid-row: 7/ span 6;
+    position: relative;
     
 }
 .team-member-img5{
      grid-column: 5/ span 4;
     grid-row: 7/ span 6;
+    position: relative;
     
 }
 .team-member-img6{ 
     grid-column: 9/ span 4;
     grid-row: 7/ span 6;
+    position: relative;
     
 }
+.trainer-dtailes{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+
+}
+
+.trainer-dtailes h3{
+    color: aliceblue;
+    font-size: 1vw;
+}
+.trainer-dtailes p{
+    color: rgb(178, 180, 180);
+    font-size: .9vw;
+}
 /*meet our team end*/
+/*footer star*/
+
+.foot-bar{
+    background: rgba(2, 2, 2, 0.938);
+}
+.foot-contener{
+    width: 74.4vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 0 1.5vw;
+    
+}
+.footer-manu{
+    width: 50%;
+
+}
+.foot-logo{
+    font-size: 3vw;
+    font-weight: 900;
+}
+.foot-para{
+    font-size: 12px;
+    padding-top: 1.5vw;
+    color: rgb(142, 145, 145);
+}
+.footer-manu {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    
+}
+.footer-manu a{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    color: rgb(114, 113, 113);
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding: .7vw;
+
+}
+.footer-manu h1{
+    color: aliceblue;
+    font-size: 2vw;
+    font-weight: 700;
+    text-align: left;
+
+}
+.hr{
+    width: 74.4vw;
+    margin: 0 auto;
+}
+.all-right{
+    padding: .8vw 0 2vw;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(157, 158, 158);
+}
+
+/*footer end*/
 
