@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
+@font-face {
+    font-family: "myfont";
+    src: url(../fonts/Miama.ttf);
+}
+
 *{
     font-family: "Inter", sans-serif;
     
     margin: 0;
     padding: 0;
+}
+.new-font{
+    font-family: "myfont";
+    font-size: 100px;
+ 
 }
 .all-over-body{
     max-width: 1440px;
@@ -87,7 +96,7 @@
 }
 /*navbar end*/
 /*Banner start*/
-.banner-contener {
+.banner-contener{
     margin-top: 10px;
 }
 .banner-content-bar{  
@@ -96,15 +105,15 @@
 .banner-title{
     font-size:3.5rem;
     font-weight: 900;
+    padding-bottom: 1.5rem;
     
 }
-.banner-title > span{
-    font-family: "Estonia", cursive;
-    display: inline-block;
-    font-size: 100px;
+.banner-title .titalbar{
+    display: block;
+    line-height: 60px;
     
-   
 }
+
 .banner-discription{    
     font-size: 14px;
 }
@@ -609,14 +618,17 @@
 }
 .age-sex .sex, input{
     width: 50%;
-    padding: 10px;
+    padding: 1px;
     margin: 5px;
     border-radius: 10px;
     border: none;
     background-color: rgba(133, 133, 133, 0.5);
 }
+
 .sex select{
     width: 100%;
+    padding: 10px;
+    border-radius: 5px;
     background-color: rgba(85, 84, 84, 0.685);
     border: none;
 }
